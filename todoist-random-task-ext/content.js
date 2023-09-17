@@ -22,7 +22,7 @@ window.onload = function () {
         });
         document.addEventListener('keydown', function(e) {
           // Check if the pressed key's keyCode is 82 (for the "r" key) and the target is not an input or textarea
-          if (e.keyCode === 82 && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
+          if (e.keyCode === 82 && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA' && e.target.getAttribute('contenteditable') !== "true") {
             // Find the button by its ID
             let button = document.getElementById('randomTaskButton');
             if (button) {
