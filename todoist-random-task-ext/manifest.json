@@ -6,7 +6,7 @@
     "permissions": ["activeTab", "storage"],
     "content_scripts": [
       {
-        "matches": ["https://todoist.com/*"],
+        "matches": ["https://todoist.com/*", "https://app.todoist.com/*"],
         "js": ["content.js"],
         "css": ["styles.css"]
       }
