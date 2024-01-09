@@ -1,8 +1,11 @@
 window.onload = function () {
 
+  const headerClass = 'MdIhShr';
+  const taskClass = 'task_list_item__content';
+
   // Function to create and insert the button
   function insertRandomTaskButton() {
-    let listHeader = document.querySelector('.view_header__actions');
+    let listHeader = document.querySelector('.' + headerClass);
     if (listHeader && !document.getElementById('randomTaskButton')) {
       let button = document.createElement('button');
       button.id = 'randomTaskButton';
@@ -14,7 +17,7 @@ window.onload = function () {
       // Add a click listener to the button
       button.addEventListener('click', function () {
         // Here you would add the logic to select a random task
-        let tasks = document.getElementsByClassName('task_list_item__content');
+        let tasks = document.getElementsByClassName(taskClass);
         tasks[Math.floor(Math.random() * tasks.length)].click();
       });
     }
