@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Random Task Picker for Todoist",
-    "version": "1.0",
+    "version": "1.10",
     "description": "An extension to select a random task from Todoist",
     "permissions": ["activeTab", "storage"],
     "content_scripts": [
