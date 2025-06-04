@@ -1,6 +1,6 @@
 window.onload = function () {
 
-  const headerClass = 'MdIhShr';
+  const headerClass = 'nttWE6W';
   const taskClass = 'task_list_item__content';
 
   // Function to create and insert the button
